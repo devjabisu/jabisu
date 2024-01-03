@@ -1,6 +1,6 @@
 {
   "name": "dev_helper_demo",
-  "version": "0.1.1-0",
+  "version": "0.1.1-1",
   "prisma": {
     "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
   },
