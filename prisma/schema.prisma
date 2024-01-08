@@ -1,0 +1,50 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider     = "sqlite"
+  url          = env("DATABASE_URL")
+}
+model SnippetPref {
+  id             String  @id @unique
+  theme          String
+  fontSize       Int
+  fontFamily     String
+  tabSize        Int
+  lineNumbers    Boolean
+  wordWrap       Boolean
+  highlightLine  Boolean
+  autoCompletion Boolean
+}
+
+model PinnedApp {
+  id String @id @unique
+}
+
+model Snippet {
+  id        Int            @id @default(autoincrement())
+  title     String
+  content   String
+  folderId  String
+  folder    SnippetFolder  @relation(fields: [folderId], references: [id])
+  createdAt DateTime       @default(now()) @map(name: "created_at")
+  updatedAt DateTime       @updatedAt @map(name: "updated_at")
+  deleted   Boolean
+  favorite  Boolean
+  language  String
+}
+
+model SnippetFolder {
+  id       String     @id @unique
+  name     String
+  snippets Snippet[]
+}
+
+model LocalePref {
+  id             String  @id @unique
+  locale         String
+}

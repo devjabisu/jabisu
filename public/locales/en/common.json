@@ -1,0 +1,16 @@
+{
+  "hi": "Hello",
+  "filter": "Filter",
+  "unix_converter_name": "UNIX Time Converter",
+  "unix_converter_desc": "Easy UNIX timestamp converter for developers",
+  "prettier_formatter_name": "Prettier Formatter",
+  "prettier_formatter_desc": "Use prettier to format your HTML / JSON etc. files",
+  "data_converter_name": "Data Converter",
+  "data_converter_desc": "Data converter supports converting JSON / YAML / TOML etc",
+  "base64_converter_name": "Base64 Converter",
+  "base64_converter_desc": "Base64 text / file converter",
+  "generator_name": "Data Generator",
+  "generator_desc": "Mock data generator for conveniently developing",
+  "snippet_name": "Snippet Manager",
+  "snippet_desc": "Manage all your code snippets"
+}

@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+
+.btn {
+  @apply inline-flex items-center px-2 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200;
+}
+
+.btn:hover {
+  @apply bg-gray-100 text-blue-700;
+}
+
+.btn-selected {
+  @apply inline-flex items-center px-2 py-2 text-sm font-medium text-white  bg-blue-700 border border-gray-200;
+}
+
+.snippet-brief-hl {
+  @apply bg-blue-600 text-white rounded-lg;
+}
+
+.snippet-brief-nohl {
+  @apply bg-white text-gray-900;
+}
+
+.snippet-brief-nohl:hover {
+  @apply bg-gray-100 rounded-lg;
+}
+.snippet-brief-nohl > .subtitle {
+  @apply text-gray-400;
+}
+
+#snippet-brief-list > * {
+  @apply mt-1;
+}
+
+#snippet-sidebar {
+  height: 92vh;
+}
+
+#snippet-btn-refresh {
+  stroke-width: 1.5rem;
+}
+
+/* Hide the default scrollbar */
+::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  @apply bg-gray-200;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-blue-300 rounded-lg;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-blue-600;
+}
+
+[contenteditable]:focus {
+  @apply outline-none;
+}
+
+.formatter-panel-grid {
+  grid-template-columns: repeat(15, minmax(0, 1fr));
+}
+
+.convert-panel-grid {
+  grid-template-columns: repeat(15, minmax(0, 1fr));
+}
+
+#formatter-in {
+  height: 85vh;
+}
+
+#formatter-out {
+  height: 85vh;
+}
+
+#converter-in {
+  height: 85vh;
+}
+
+#converter-out {
+  height: 85vh;
+}
+#apps-panel {
+  height: 75vh;
+}
+
+#format-upload-btn {
+  z-index: 9;
+}
+
+.context-menu {
+  --contexify-menu-shadow: 2px 3px 3px rgba(17, 17, 17, 0.1);
+  --contexify-activeItem-bgColor: rgba(37, 99, 235, 1);
+}
+
+#base64-in {
+  width: 80%;
+  height: 35vh;
+}
+
+#upload-panel {
+  width: 80%;
+  height: 35vh;
+}
+
+#base64-out {
+  width: 80%;
+  height: 35vh;
+}
+
+#generator-type-sel-panel {
+  height: 60vh;
+}
+
+#category-sel-menu {
+  height: 55vh;
+}
+
+#type-sel-panel {
+  height: 55vh;
+}
+
+#out-textarea {
+  height: 90vh;
+}
+
+.vert-center-text {
+  padding: 0.5rem 0;
+}
+
+@tailwind utilities;
