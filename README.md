@@ -1,4 +1,3 @@
-# jabisu
 # Jabisu
 
 A set of tools which make developing easier.
