@@ -48,4 +48,5 @@ npm run dev // or use your preferred management tools like yarn or pnpm.
 
 ![img](./public/img7.png)
 
+## Coming soon
 Release versions will be provided in the future after major bugs have been fixed. May use tauri to release a standalone application version as well.
