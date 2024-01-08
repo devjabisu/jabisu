@@ -39,3 +39,5 @@ next-env.d.ts
 
 bin/*
 tmp/*
+
+prisma/dev.db
