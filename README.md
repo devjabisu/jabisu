@@ -1,5 +1,7 @@
 # Jabisu
 
+### NOTICE: I'm currently looking for a new full time job, the development and bug fixes on this project may be postponed.
+
 A set of tools which make developing easier.
 
 ## Requirements:
